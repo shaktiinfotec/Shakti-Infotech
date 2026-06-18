@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shakti Infotech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="D:\Shakti Infotech Logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .feature-card {
+            position: relative;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        /* Blue line at left-bottom */
+        .feature-card::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70px;
+            height: 4px;
+            background: #0047AB;
+            border-radius: 0 5px 0 0;
+            transition: width 0.3s ease;
+        }
+
+        /* Hover effect */
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-card:hover::after {
+            width: 120px;
+        }
+
+        .feature-title {
+            color: #002B5B;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .feature-text {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .feature-icon {
+            color: #002B5B;
+            font-size: 28px;
+        }
+
+        .team-card {
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+            padding: 20px;
+            background: #fff;
+            height: 100%;
+        }
+
+        .team-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .role {
+            color: #008080;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .desc {
+            color: #4b5563;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>403,shri sai complex,sanstha vasahat,aRaopura,Vadodara-390001.</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>10:00 am - 7:00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>shaktiinfotech1970@gmail.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>.:06354802360</small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="C:\Users\LENOVA\Downloads\Shakti Infotech Logo (1).jpg" alt="Image" style="max-width: 150px; height: auto;">
+                <h1 class="display-5 text-primary m-0">shakti Infotech</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/ACS2007">
+                        <small class="fab fa-facebook-f text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="file:///D:/Finanza/index.html">
+                        <small class="fab fa-twitter text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="file:///D:/Finanza/index.html">
+                        <small class="fab fa-linkedin-in text-primary"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="D:\Screenshot 2026-06-12 152650.png" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to Shakti infotech</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">We specialize in all types of banking software and solutions...</h1>
+                                    </p> As a leading provider of Banking Software and Solutions, Web designs, UI/UX, Web development, and Windows development solutions, Shakti infotech is a place where you can find the best solutions for creating professional software.</P>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Banking softwer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="D:\download (1).jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                             <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Shakti INfotech</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">True Financial Support For You</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4 align-items-end mb-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" src="D:\who_we_are.png">
+               </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
+                    <h1 class="display-5 mb-4">Who We Are</h1>
+                    <p>
+                    <div class="title mb-5">
+                        <h5>ABOUT US</h5>
+
+                    </div>
+                    <p>
+                        The Shakti INfotech is a place where you can find the best solutions for your
+                        professional software needs, such as Banking Software, Web designs, UI/UX, Web development, and
+                        Windows development.
+                    </p>
+
+                    <p>
+                        Our company was established in 2008 and began offering a wide range of Web design and
+                        development services, Banking Software and Solutions.
+                    </p>
+
+                    <p>
+                        In the banking sector, we have the most reliable banking software and solutions
+                    </p>
+
+                    <div class="row my-2">
+                        <div class="col-md-5">
+                            <ul class="ps-0 list_style_none">
+                                <li><i class="bi bi-star-fill me-3"></i> Government Banks </li>
+                                <li><i class="bi bi-star-fill me-3"></i> Private Banks </li>
+                                <li><i class="bi bi-star-fill me-3"></i> District Central Co-Op Banks</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="ps-0 list_style_none">
+                                <li><i class="bi bi-star-fill me-3"></i> Urban Central Co-Op Banks</li>
+                                <li><i class="bi bi-star-fill me-3"></i> Financial Institute </li>
+                                <li><i class="bi bi-star-fill me-3"></i> Apex Banks <small>(State Cooperative
+                                        Bank)</small></li>
+                                <small>(State Cooperative
+                                    Bank)</small></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p>
+                        We have a number of reputed banks as clients across India, including the following states.
+                    </p>
+
+                    <p>
+                        Andhra Pradesh / Assam / Bihar / Chhattisgarh /Delhi / Noida / Gujarat / Haryana / Himachal
+                        Pradesh / Jammu & Kashmir / Jharkhand / Karnataka / Kerala / Madhya Pradesh / Maharashtra /
+                        Meghalaya / Mizoram / Rajasthan / Tamil Nadu / Telangana / Uttar Pradesh / Uttarakhand / West
+                        Bengal
+                    </p>
+                   
+
+                          
+
+                                </a>
+                            </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                    </p>
+            
+                        <nav>
+                  
+                       
+                         
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
+                                
+                           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Software Hero Banner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        /* Custom styles to match the image aesthetics */
+        .hero-banner {
+            background: linear-gradient(135deg, #023846 0%, #075c6d 50%, #004b5c 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 80px 20px;
+            color: #ffffff;
+        }
+
+        /* Subtle background glow effect simulating the image */
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            width: 300px;
+            height: 300px;
+            background: rgba(25, 172, 191, 0.2);
+            border-radius: 50%;
+            filter: blur(80px);
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Large watermarked/background bank icon */
+        .bg-bank-icon {
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.08);
+            border: 4px solid rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            padding: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 180px;
+            margin-bottom: -40px;
+        }
+
+        .hero-title {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Circular footer icons */
+        .feature-icon-circle {
+            width: 60px;
+            height: 60px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-icon-circle:hover {
+            border-color: rgba(255, 255, 255, 0.6);
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking Software Banner</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <style>
+    .banking-banner {
+      background: linear-gradient(135deg, #0e4c54 0%, #062b32 100%);
+      min-height: 420px;
+      position: relative;
+      overflow: hidden;
+    }
+    .bg-center-logo {
+      position: absolute;
+      top: 45%;
+      left: 32%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 280px;
+      border: 2px solid rgba(0, 242, 254, 0.08);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .bg-center-logo::before {
+      content: '';
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border: 1px solid rgba(0, 242, 254, 0.15);
+      border-radius: 50%;
+    }
+    .bg-center-logo i {
+      font-size: 6rem;
+      color: rgba(0, 242, 254, 0.15);
+    }
+
+    /* 2. लेफ्ट साइड का छोटा हेक्सागोनल लोगो */
+    .bg-left-hex {
+      position: absolute;
+      left: 20px;
+      bottom: 20%;
+      opacity: 0.15;
+      font-size: 3rem;
+      color: #00f2fe;
+    }
+    .wave-line {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      pointer-events: none;
+    }
+    .icon-double-ring {
+      width: 75px;
+      height: 75px;
+      border: 1px solid rgba(0, 242, 254, 0.2); 
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: rgba(6, 43, 50, 0.4);
+      backdrop-filter: blur(5px);
+    }
+    .icon-inner-ring {
+      width: 63px;
+      height: 63px;
+      border: 2px solid rgba(0, 242, 254, 0.4); 
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00f2fe;
+      font-size: 1.5rem;
+      box-shadow: inset 0 0 10px rgba(0, 242, 254, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banking-banner d-flex flex-column justify-content-center align-items-center text-white px-3">
+    
+    <div class="bg-center-logo d-none d-md-flex">
+      <i class="fa-solid : fa-building-columns"></i>
+    </div>
+    <div class="bg-left-hex d-none d-md-block">
+      <i class="fa-solid fa-cubes"></i>
+    </div>
+    <div class="container text-center my-auto position-relative" style="max-width: 950px; z-index: 3;">
+      <h1 class="fw-bold display-5 lh-base px-2">
+        A Complete Banking Software Services, Helping you build your banking experience better
+      </h1>
+    </div>
+
+    <div class="container w-100 mt-auto position-relative" style="z-index: 3;">
+      <div class="d-flex justify-content-center justify-content-md-end gap-3 pb-4 pe-md-4">
+        
+        <div class="icon-double-ring">
+          <div class="icon-inner-ring"><i class="fa-solid fa-lock"></i></div>
+        </div>
+        
+        <div class="icon-double-ring">
+          <div class="icon-inner-ring"><i class="fa-solid fa-globe"></i></div>
+        </div>
+        
+        <div class="icon-double-ring">
+          <div class="icon-inner-ring"><i class="fa-solid fa-user-gear"></i></div>
+        </div>
+        
+        <div class="icon-double-ring">
+          <div class="icon-inner-ring"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="wave-line">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+        <defs>
+          <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="4" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
+        <path d="M0,45 C320,15 420,5 720,35 C1020,65 1120,25 1440,40" 
+              fill="none" 
+              stroke="#00f2fe" 
+              stroke-width="3" 
+              filter="url(#glow)" />
+      </svg>
+    </div>
+
+  </div>
+
+</body>
+</html>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12">
+                    <h1 class="display-5 hero-title">
+                      
+                </div>
+            </div>
+                    </div>
+                </div>
+               
+                    </div>
+               
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ </script>
+</body>
+</html>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+<section class="py-5" style="background-color: #ffffff;">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      
+      <div class="col-md-6">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="fw-bold text-uppercase tracking-wider" style="font-size: 0.85rem; letter-spacing: 1px; color: #333;">ABOUT US</span>
+          <div style="flex-grow: 1; height: 2px; background-color: #333; max-width: 150px;"></div>
+        </div>
+
+        <h1 class="fw-bold mb-4" style="color: #006666; font-size: 2.5rem;">
+          Welcome to Ashvi Consultancy Service LLP. !
+        </h1>
+
+        <p class="text-secondary mb-3" style="line-height: 1.6; font-size: 0.95rem;">
+          Ashvi Consultancy Service LLP, a Surat, Gujarat based Company, an authorized software service provider engaged in <strong>Community Banking Software Development</strong> with maximum level protection. We take pride in rendering good and protective services to bank more than 15 years.
+        </p>
+        
+        <p class="text-secondary mb-4" style="line-height: 1.6; font-size: 0.95rem;">
+          Ashvi Consultancy Service LLP is constantly evolving and our developers constantly upgrade their skills to provide our customers proper software solutions in tune with the the latest trends and technologies available.
+        </p>
+
+        <a href="#" class="btn px-4 py-2 rounded-pill text-white fw-semibold" style="background-color: #005f6b; border: none; font-size: 0.95rem;">
+          Know more...
+        </a>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ps-md-4">
+          <img src="D:\about_us_we_also_provide (1).png" alt="Banking Software" class="img-fluid w-100 shadow-sm" style="border-radius: 24px; object-fit: cover; max-height: 450px;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+    <!--Bank List-->
+    <div class="container mt-5">
+        <div class="row g-4">
+            <!-- Item 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center">
+                    <img src="img/bank1.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>HDFC</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center">
+                    <img src="img/bank2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>agresan bank</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center">
+                    <img src="img/bank3.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>akhand ananad</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card text-center">
+                    <img src="img/bank4.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Associate Bank</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--Bank List-->
+    <!--NEW!-->
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="me-4">
+                            <i class="bi bi-ticket-perforated feature-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="feature-title">Online Complaint Management System</h4>
+                            <p class="feature-text mb-0">
+                                Complaint Logging, Ticketing and Tracking, Workflow Management...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="me-4">
+                            <i class="bi bi-shield-lock feature-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="feature-title">Comprehensive Cyber Security Framework</h4>
+                            <p class="feature-text mb-0">
+                                As per RBI Guideline
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="me-4">
+                            <i class="bi bi-phone feature-icon"></i>
+                        </div>
+                        <div>
+                            <h4 class="feature-title">ATM Reconciliation</h4>
+                            <p class="feature-text mb-0">
+                                IMPS, POS, ATM, UPI, NEFT, RTGS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NEW1-->
+    <div class="container-fluid mt-5">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-6">
+                <div class="team-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="img/ganpat_bhai_cmd.jpg" class="team-img">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="fw-bold">
+                                Mr. Ganpat Bhurabhai Dhameliya
+                            </h2>
+                            <p class="role">
+                                Founder
+                            </p>
+                            <p class="desc">
+                                An accomplished master degree of information technology &
+                                doctorate degree in cyber security in banking with a strong flair
+                                in systems design, development methodology & database architecture.
+                            </p>
+                            <p class="desc">
+                                With his dynamism, discipline, visionary acumen &
+                                unparalleled hard work, he has led the company to become
+                                a trusted IT solutions and services hub.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-6">
+                <div class="team-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <img src="D:\purvinbhai_ed.jpg" class="team-img">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="fw-bold">
+                                Mr. Purvin Gordhanbhai Jayani
+                            </h2>
+                            <p class="role">
+                                Co-Founder
+                            </p>
+                            <p class="desc">
+                                A talented & passionate B.Tech in Information Technology.
+                            </p>
+                            <p class="desc">
+                                With strategic inputs and technology expertise,
+                                he guides business development and market strategy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testimonial Section</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            body {
+                background: #d5dde0;
+            }
+
+            .testimonial-card {
+                background: #f7f7f7;
+                border-radius: 30px;
+                padding: 40px;
+                height: 100%;
+                min-height: 680px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .quote {
+                font-size: 80px;
+                color: #00838f;
+                line-height: 1;
+            }
+
+            .review-text {
+                color: #4a5967;
+                font-size: 20px;
+                line-height: 1.8;
+            }
+
+            .stars {
+                color: #f4b400;
+                font-size: 30px;
+            }
+
+            .user-box {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+            }
+
+            .user-box img {
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
+                border: 5px solid #00838f;
+                object-fit: cover;
+            }
+
+            .user-name {
+                color: #007f91;
+                font-size: 32px;
+                margin-bottom: 5px;
+            }
+
+            .user-role {
+                color: #56626d;
+                font-size: 22px;
+            }
+
+            @media(max-width:768px) {
+                .testimonial-card {
+                    min-height: auto;
+                    margin-bottom: 20px;
+                }
+
+                .user-name {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container-fluid py-4">
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="quote">❝</div>
+                            <p class="review-text">
+                                Ashvi Consultancy Service is the most reliable
+                                Indian company and I believe I had hired Various
+                                Banking Software Products. They took on a very
+                                difficult project and created it in a vivid and
+                                attractive way within the shortest possible time.
+                            </p>
+                        </div>
+
+                        <div>
+
+                            <div class="stars mb-4">
+                                ★★★★★
+                            </div>
+
+                            <div class="user-box">
+
+                                <img src="https://i.pravatar.cc/150?img=12">
+
+                                <div>
+                                    <h4 class="user-name">Mr. Paresh Kelavala</h4>
+                                    <p class="user-role">
+                                        Asst. General Manager, The Varachha Bank
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-6">
+
+                    <div class="testimonial-card">
+
+                        <div>
+
+                            <div class="quote">❝</div>
+
+                            <p class="review-text">
+                                Unique themes, unique service—Ashvi Consultancy
+                                Service not only produces wonderful products,
+                                they guide you through making the product work
+                                for you. Responsive layout and responsive staff. co
+                            </p>
+                        </div>
+                        <div>
+                            <div class="stars mb-4">
+                                ★★★★★
+                            </div>
+                            <div class="user-box">
+                                <img src="https://i.pravatar.cc/150?img=15">
+                                <div>
+                                    <h4 class="user-name">
+                                        Mr. Anurag Kothari
+                                    </h4>
+                                    <p class="user-role">
+                                        Chairman, Arihant School
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .tech-section {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+        .section-tag {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #0a7a80;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .section-tag::after {
+            content: "";
+            width: 120px;
+            height: 3px;
+            background: #333;
+            position: absolute;
+            top: 50%;
+            left: 110%;
+        }
+        .tech-title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #0a7a80;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+        .tech-content p {
+            color: #555;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        .btn-custom {
+            background: #0a7a80;
+            color: #fff;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-custom:hover {
+            background: #06646a;
+            color: #fff;
+        }
+        .tech-card {
+            height: 250px;
+            border: 1px solid #ddd;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tech-card img {
+            max-width: 120px;
+            max-height: 100px;
+            object-fit: contain;
+        }
+        @media (max-width: 991px) {
+            .tech-title {
+                font-size: 2.8rem;
+            }
+            .tech-card {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="tech-section">
+    <div class="container">
+        <div class="row align-items-start">
+            <!-- Left Content -->
+            <div class="col-lg-6 tech-content pe-lg-5">
+                <span class="section-tag">TECHNOLOGIES</span>
+                <h2 class="tech-title">
+                    We are working on much more technology
+                </h2>
+                <p>
+                    Years of experience in the banking software industry,
+                    high-quality customer data aggregation and enrichment,
+                    and a Gartner-leading API platform for innovative use cases.
+                </p>
+                <p>
+                    We provide an API-first, component-based banking solution,
+                    available as custom or ready-to-use, in collaboration with
+                    much more technology.
+                </p>
+                <p>
+                    Combine our banking and financing platforms with our
+                    solutions to quickly build products that delight banking customers.
+                </p>
+                <a href="#" class="btn-custom">Know more >></a>
+            </div>
+            <!-- Right Logos Grid -->
+            <div class="col-lg-6">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_01.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_02.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_03.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_04.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_05.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_06.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_07.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_08.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="tech-card">
+                            <img src="D:\tec_09.png" alt="">
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Stats Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom background color to match the image */
+    .bg-teal {
+      background-color: #007575; 
+    }
+    /* Styling to match font weights and spacing */
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .stat-text {
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    .stat-icon {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-teal text-white py-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 text-start">
+        <div class="d-flex align-items-center gap-3">
+          <img src="D:\year_experiance.png" alt="Experience Icon" class="stat-icon">
+          <div>
+            <div class="stat-number">16+</div>
+            <div class="stat-text">Years of industry<br>Experience</div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <img src="D:\client.png" alt="Client Icon" class="stat-icon">
+          <div>
+            <div class="stat-number">400+</div>
+            <div class="stat-text">Our happy bank<br>client</div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <img src="D:\our_happy_client (1).webp" alt="Transaction Icon" class="stat-icon">
+          <div>
+            <div class="stat-number">20,00,000+</div>
+            <div class="stat-text">Transaction handled<br>per day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container my-5" style="font-family: sans-serif;">
+  <!-- Top Small Title with Line -->
+  <div class="d-flex align-items-center mb-2">
+    <span class="text-uppercase fw-bold tracking-wider fs-6 text-secondary" style="letter-spacing: 1px;">SERVICES</span>
+    <div class="ms-2 flex-grow-1 bg-dark" style="height: 2px; max-width: 150px;"></div>
+  </div>
+  <!-- Main Big Heading -->
+  <h1 class="display-5 fw-bold mb-4" style="color: #0b6366; line-height: 1.2;">
+    Customer service shouldn't just be a department; it should be the entire company.
+  </h1>
+  <!-- Description Paragraph -->
+  <p class="text-muted mb-5" style="font-size: 15px; line-height: 1.6; text-align: justify;">
+    If bank ever called our number, it would be picked up in less than 2 rings with a friendly voice answering; "Ashvi Consultancy Service" From 10 am to 6 pm, there always somebody to pick up the rings. No voice mail system; no routing to different departments. We treated our customers like our best friends. You don't route your best friend's call to an automated system!
+  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Cards Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Styling to match the specific look and colors of the screenshot */
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 50px 0;
+    }
+    .custom-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #fff;
+      height: 100%; /* Ensures all cards have equal height */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .custom-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover; /* Keeps image proportions clean */
+    }
+    .custom-card .card-body {
+      padding: 30px 25px;
+    }
+    .custom-card .card-title {
+      color: #0b6c7a; /* Teal color matching the screenshot headers */
+      font-weight: 600;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+    .custom-card .card-text {
+      color: #555555;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row g-4">
+    
+    <div class="col-md-4">
+      <div class="custom-card">
+        <img src="D:\Software_product.jpg" alt="Software Product Development">
+        <div class="card-body">
+          <h3 class="card-title">Software Product<br>Development</h3>
+          <p class="card-text">
+            On the technical aspects of software development, we are keenly aware of the large Variety of development languages and system architectures. Direct hands-on experience with today's rapid development tools can be confirmed as the only proven method utilized by ACS.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card">
+        <img src="D:\our_best_technical.jpg" alt="Technical Strategy">
+        <div class="card-body">
+          <h3 class="card-title">Our best Technical<br>Strategy</h3>
+          <p class="card-text">
+            We tend to move away from monolithic software architecture implementation and instead use different languages and technologies based on the nature and anticipated behavior of a particular system.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card">
+        <img src="D:\mobile_app_development.jpg" alt="Mobile App Development">
+        <div class="card-body">
+          <h3 class="card-title">Mobile App Development<br>iOS & Android</h3>
+          <p class="card-text">
+            We provide state of art implementation services user interfaces primarily targeted for mobile applications of all types. We are not afraid of latest advancements such as html5, css3, responsive layouts and frameworks such as Angular JS.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</section>
+</body>
+</html>
+    </body>
+    </html>
+    <!-- Contact Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
+                    <h1 class="display-5 mb-4">If You Have Any Query, Please Contact Us</h1>
+                    <h4 class="mb-4">Receive messages instantly with our PHP and Ajax contact form - available in the <a href="https://htmlcodex.com/downloading/?item=2639">Pro Version</a> only.</h4>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+      8                          </div>
+                            </div>
+     8                       <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                    <div class="position-relative rounded overflow-hidden h-100">
+                        <iframe
+  src="https://www.google.com/maps?q=Vadodara,Gujarat,India&output=embed"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <!-- Footer Start -->
+    <footer class="text-white py-5 position-relative" style="background-color: #007a87; overflow: hidden;">
+  <div class="container">
+    
+    <div class="row gy-4 mb-5">
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="mb-3">
+         <div class="mb-3">
+  <img src="file:///D:/Shakti Infotech Logo.png" alt="Shakti Infotech Logo" style="height: 60px; width: auto;" class="mb-2">
+  
+  <h2 class="fw-bold text-danger m-0">Shakti Infotech</h2>
+</div>
+        </div>
+        <p class="small text-light text-opacity-75">
+          We specialize in all types of banking software and solutions...
+        </p>
+        <p class="small text-light text-opacity-75">
+          As a leading provider of Banking Software and Solutions, Web designs, UI/UX, Web development, and Windows development solutions, Ashvi Consultancy Service LLP is a place where you can find the best solutions for creating professional software.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled small lh-lg text-light text-opacity-75">
+          <li>Home</li>
+          <li>Who we are</li>
+          <li>Our Products</li>
+          <li>Process</li>
+          <li>Client</li>
+        </ul>
+
+        <h5 class="fw-bold mt-4 mb-3" style="font-size: 1rem;">Follow on Social Media</h5>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="fab fa-facebook-f text-dark"></i></a>
+          <a href="#" class="btn btn-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="fab fa-twitter text-dark"></i></a>
+          <a href="#" class="btn btn-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="fab fa-youtube text-dark"></i></a>
+          <a href="#" class="btn btn-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="fab fa-whatsapp text-dark"></i></a>
+          <a href="#" class="btn btn-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="fab fa-telegram-plane text-dark"></i></a>
+          <a href="#" class="btn btn-light rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;"><i class="fab fa-instagram text-dark"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold mb-3">Updates</h5>
+        <ul class="list-unstyled small lh-lg text-light text-opacity-75 mb-4">
+          <li>Blog</li>
+          <li>News</li>
+          <li>Career</li>
+          <li>Get in Touch</li>
+        </ul>
+
+        <div class="d-flex flex-wrap gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <div class="rounded-circle bg-secondary border border-light" style="width: 45px; height: 45px; overflow: hidden;">
+              <img src="D:\ganpatbhai.png" alt="Founder" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div>
+              <p class="mb-0 small fw-bold text-white">Mr. Ganpat Dhameliya</p>
+              <small class="text-light text-opacity-75" style="font-size: 11px;">Founder</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <div class="rounded-circle bg-secondary border border-light" style="width: 45px; height: 45px; overflow: hidden;">
+              <img src="D:\Purvin_jayani.png" alt="Co-Founder" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div>
+              <p class="mb-0 small fw-bold text-white">Mr. Purvin Jayani</p>
+              <small class="text-light text-opacity-75" style="font-size: 11px;">Co-Founder</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold mb-3">Contact Us</h5>
+        <div class="d-flex gap-2 mb-3">
+          <i class="fas fa-map-marker-alt fs-5 mt-1"></i>
+          <div class="small text-light text-opacity-75">
+            <strong class="text-white d-block">Head Quarters</strong>
+            403, Shri sai complex sanstha Vasahat Raopura Vadodara
+          </div>
+        </div>
+        <div class="d-flex gap-2 mb-3">
+          <i class="fas fa-comments fs-5 mt-1"></i>
+          <div class="small text-light text-opacity-75">
+            <strong class="text-white d-block">General Inquiries</strong>
+            shaktiinfotech1970@gmail.com
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <i class="fas fa-phone-alt fs-5 mt-1"></i>
+          <div class="small text-light text-opacity-75">
+            <strong class="text-white d-block">Customer Support</strong>
+            +91 8734081492
+          </div>
+        </div>
+      </div>
+
+    </div> <div class="d-flex flex-column align-items-center mt-5 position-relative">
+      
+      <a href="#" class="btn btn-outline-light rounded-circle p-0 d-flex align-items-center justify-content-center mb-2" style="width: 35px; height: 35px; border-width: 2px;">
+        <i class="fas fa-arrow-up" style="font-size: 0.9rem;"></i>
+      </a>
+
+      <div class="pt-3 px-5 position-relative" style="border: 2px solid rgba(255,255,255,0.7); border-bottom: none; border-radius: 120px 120px 0 0; margin-bottom: -3rem; background-color: #007a87;">
+        
+        <a href="#" class="btn bg-white text-dark fw-semibold rounded-pill px-5 py-2 shadow-sm" style="font-size: 0.95rem; min-width: 220px; border: 2px solid transparent;">
+          View all Products
+        </a>
+        
+      </div>
+    </div>
+
+  </div>
+</footer>
+      
+     
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Your Shakti Infotech</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
+                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version from https://htmlcodex.com . ***/-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
